@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+   .bdr{
+    @apply relative  py-0.5 z-10 before:transition-all before:duration-300 before:ease-linear before:absolute before:top-0 before:left-0 before:h-full before:w-4  
+ before:-z-10 before:border-b-2 hover:before:w-full active:scale-90 transition-all duration-300 ease-linear
+   }
+}
