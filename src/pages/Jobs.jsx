@@ -2,7 +2,7 @@
 const Jobs = () => {
     return (
         <>
-            
+            job circuler
         </>
     );
 };

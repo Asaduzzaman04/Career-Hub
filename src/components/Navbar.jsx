@@ -28,7 +28,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <nav className="shadow-2xl shadow-blue-500/20 overflow-hidden bg-secondary flex justify-between lg:justify-around items-center text-2xl md:text-xl  px-4 py-6 capitalize font-semibold">
+      <nav className=" w-full shadow-2xl shadow-blue-500/20 overflow-hidden bg-secondary flex justify-between lg:justify-around items-center text-2xl md:text-xl  px-4 py-6 capitalize font-semibold">
         {/* -----icon----- */}
         <div className="logo ">
           <span className="text-3xl text-">c</span>areer{" "}
@@ -38,7 +38,7 @@ const Navbar = () => {
         {/* -----NavLinks----- */}
         <ul className=" hidden md:flex justify-between items-center gap-16 ">
           {links.map((e) => (
-            <NavLink key={e.id} to={e.path} className={e.class}>
+            <NavLink key={e.id} to={e.path} className={e.class} >
               {e.name}
             </NavLink>
           ))}
@@ -52,18 +52,17 @@ const Navbar = () => {
           <RxHamburgerMenu className=" transition-all duration-300 active:scale-50 "  />
         </div>
 
-        <ul className={`flex flex-col bg-secondary transition-all ease-linear duration-300  justify-center items-center md:hidden absolute  left-0   w-full h-full gap-20 ${open ? 'top-[0%]' : 'top-[-100%]'} `}>
+        <ul className={`flex flex-col bg-secondary transition-all ease-linear duration-300  justify-center items-center md:hidden absolute  left-0 z-50  w-full h-full gap-16 ${open ? 'top-[0%]' : 'top-[-100%]'} `}>
           <div className="text-5xl   rounded-full transition-all duration-300 active:scale-50" onClick={() => setOpen(!open)}>
             <IoCloseCircle  className="bg-transparent text-accent"/>
           </div>
           {links.map((e) => (
-            <NavLink key={e.id} to={e.path} className={e.class}>
+            <NavLink key={e.id} to={e.path} className={e.class} onClick={() => setOpen(!open)}>
               {e.name}
             </NavLink>
           ))}
-
-          <div>
-            <Button />
+          <div onClick={() => setOpen(!open)}>
+            <Button  />
           </div>
         </ul>
       </nav>

@@ -4,13 +4,14 @@ import Home from './../pages/Home';
 import Category from "../pages/Category";
 import Jobs from './../pages/Jobs';
 import Applied from "../pages/Applied";
+import Errorpage from "../pages/Errorpage";
 
 
 const Router = createBrowserRouter([
     {
         path: '/',
         element: <Roots/>,
-        errorElement : "opps ! page not found",
+        errorElement : <Errorpage/>,
         children : [
             {
                 path : '/',

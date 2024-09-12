@@ -2,8 +2,9 @@
 
 const Category = () => {
     return (
-        <>
-        
+        <>  
+        categroy 
+
         </>
     );
 };
