@@ -5,6 +5,7 @@ import Home from "./../pages/Home";
 import Applied from "../pages/Applied";
 import Errorpage from "../pages/Errorpage";
 import Blogs from './../pages/Blogs';
+import JobDet from './../pages/JobDet';
 
 const Router = createBrowserRouter([
   {
@@ -24,7 +25,10 @@ const Router = createBrowserRouter([
       {
         path : "/Blogs",
         element : <Blogs/>
-      },
+      },{
+        path : '/jobs/:company_name',
+        element : <JobDet/>
+      }
      
       
     ],

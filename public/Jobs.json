@@ -1,0 +1,154 @@
+[
+    {
+      "id": 1,
+      "image_link": "https://i.postimg.cc/5N9jWK2z/google.png",
+      "job_title": "Front-End Developer",
+      "company_name": "google inc",
+      "job_type": "Full-time",
+      "job_address": "1234 Elm Street, Cityville",
+      "salary_range": "$60,000 - $80,000",
+      "details": {
+        "job_description": "Responsible for designing and developing user-facing web applications.",
+        "job_responsibility": "Develop responsive UI, maintain website components, collaborate with backend developers.",
+        "educational_requirement": "Bachelor's degree in Computer Science or related field.",
+        "experiences": "2+ years of experience in front-end development with React.js."
+      }
+    },
+    {
+      "id": 2,
+      "image_link": "https://i.postimg.cc/W1C4r26m/Alphabet.png",
+      "job_title": "Software Engineer Intern",
+      "company_name": "Alphabe inc",
+      "job_type": "Internship",
+      "job_address": "5678 Pine Avenue, Tech City",
+      "salary_range": "$20000 - $30000",
+      "details": {
+        "job_description": "Assist the engineering team in developing software applications.",
+        "job_responsibility": "Write clean and efficient code, participate in code reviews, collaborate with team members.",
+        "educational_requirement": "Currently pursuing a degree in Computer Science or related field.",
+        "experiences": "Familiarity with Python and JavaScript; any prior internship experience is a plus."
+      }
+    },
+    {
+      "id": 3,
+      "image_link": "https://i.postimg.cc/Hn6YLHky/tesla.png",
+      "job_title": "Software Engineer",
+      "company_name": "Tesla Inc.",
+      "job_type": "Part-time",
+      "job_address": "90 Design Blvd, Artville",
+      "salary_range": "$70,000 - $90,000",
+      "details": {
+        "job_description": "Develop, test, and maintain software applications, ensuring quality and scalability.",
+        "job_responsibility": "Write clean, efficient code for web, mobile, and desktop applications. Collaborate with cross-functional teams to design and implement software solutions.",
+        "educational_requirement": "Bachelor's degree in Computer Science, Software Engineering, or a related field.",
+        "experiences": "3+ years of experience in software development, with expertise in programming languages such as Java, Python, or JavaScript."
+      }
+    }
+    ,
+    {
+      "id": 4,
+      "image_link": "https://i.postimg.cc/2ySYMJ78/samsung.png",
+      "job_title": "Back-End Developer",
+      "company_name": "samsung inc",
+      "job_type": "Full-time",
+      "job_address": "456 Developer Lane, Codeville",
+      "salary_range": "$70,000 - $90,000",
+      "details": {
+        "job_description": "Develop server-side logic, define and maintain databases.",
+        "job_responsibility": "Build scalable backend services, integrate APIs, ensure data security.",
+        "educational_requirement": "Bachelor's degree in Computer Science or related field.",
+        "experiences": "3+ years of experience in backend development with Node.js."
+      }
+    },
+    {
+      "id": 5,
+      "image_link": "https://i.postimg.cc/ryfMxVqd/meta.png",
+      "job_title": "Mobile App Developer",
+      "company_name": "meta inc",
+      "job_type": "Contract",
+      "job_address": "789 App Street, Mobile City",
+      "salary_range": "$50,000 - $70,000",
+      "details": {
+        "job_description": "Develop and maintain mobile applications for Android and iOS platforms.",
+        "job_responsibility": "Collaborate with cross-functional teams to design new features.",
+        "educational_requirement": "Bachelor's degree in Software Engineering.",
+        "experiences": "2+ years of experience in mobile development using Flutter or React Native."
+      }
+    },
+    {
+      "id": 6,
+      "image_link": "https://i.postimg.cc/Bvf04tBz/amazon.png",
+      "job_title": "DevOps Engineer",
+      "company_name": "amazon inc",
+      "job_type": "Full-time",
+      "job_address": "321 Cloud Avenue, DevTown",
+      "salary_range": "$80,000 - $100,000",
+      "details": {
+        "job_description": "Implement and maintain CI/CD pipelines for efficient software deployment.",
+        "job_responsibility": "Automate infrastructure provisioning, monitor system performance.",
+        "educational_requirement": "Bachelor's degree in Information Technology or related field.",
+        "experiences": "4+ years of experience in DevOps, with AWS or Azure knowledge."
+      }
+    },
+    {
+      "id": 7,
+      "image_link": "https://i.postimg.cc/1tJhGB1x/netflix.png",
+      "job_title": "Data Analyst",
+      "company_name": "netflix inc",
+      "job_type": "Full-time",
+      "job_address": "159 Analytics Road, Data City",
+      "salary_range": "$55,000 - $75,000",
+      "details": {
+        "job_description": "Analyze data trends and patterns to provide actionable insights.",
+        "job_responsibility": "Work with large datasets, create data visualization dashboards.",
+        "educational_requirement": "Bachelor's degree in Data Science, Statistics, or related field.",
+        "experiences": "2+ years of experience in data analysis with proficiency in SQL and Python."
+      }
+    },
+    {
+      "id": 8,
+      "image_link": "https://i.postimg.cc/cCbpjJJX/Airbnb.png",
+      "job_title": "Full Stack Developer",
+      "company_name": "airbnb inc",
+      "job_type": "Full-time",
+      "job_address": "800 Fullstack Avenue, Web City",
+      "salary_range": "$90,000 - $110,000",
+      "details": {
+        "job_description": "Develop and maintain both frontend and backend components of web applications.",
+        "job_responsibility": "Create user-friendly UIs, design RESTful APIs, maintain databases.",
+        "educational_requirement": "Bachelor's degree in Computer Science or Software Engineering.",
+        "experiences": "4+ years of experience with JavaScript, React, and Node.js."
+      }
+    },
+    {
+      "id": 9,
+      "image_link": "https://i.postimg.cc/c4Ky3fDj/oracle.png",
+      "job_title": "QA Engineer",
+      "company_name": "oracle inc",
+      "job_type": "Part-time",
+      "job_address": "234 Testing Lane, Qualityville",
+      "salary_range": "$40,000 - $60,000",
+      "details": {
+        "job_description": "Ensure the quality and functionality of software products through rigorous testing.",
+        "job_responsibility": "Design test cases, automate testing, report and track defects.",
+        "educational_requirement": "Bachelor's degree in Computer Science or related field.",
+        "experiences": "2+ years of experience in software testing, knowledge of Selenium is a plus."
+      }
+    },
+    {
+      "id": 10,
+      "image_link": "https://i.postimg.cc/dtzMjDp0/amd.png",
+      "job_title": "Network Engineer",
+      "company_name": "amd inc",
+      "job_type": "Full-time",
+      "job_address": "987 Network Street, SecureCity",
+      "salary_range": "$70,000 - $90,000",
+      "details": {
+        "job_description": "Design, implement, and maintain company-wide network infrastructure.",
+        "job_responsibility": "Monitor network performance, troubleshoot issues, ensure network security.",
+        "educational_requirement": "Bachelor's degree in Network Engineering or related field.",
+        "experiences": "3+ years of experience in network management with Cisco certification."
+      }
+    }
+  ]
+  

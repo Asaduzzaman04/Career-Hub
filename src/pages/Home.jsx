@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import Jobs from './Jobs';
 import Category from './../components/Category';
 
+
 const text = {
     textOne : 'one step closer to your',
     spanText : 'dream job',
@@ -28,7 +29,7 @@ const Home = () => {
            " src="https://i.postimg.cc/528XPLwV/hero-Image.png" alt="" />
 
            {/* -----svg----- */}
-           <svg className="absolute -z-40 "  viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+           <svg className="absolute -z-40 animate-pulse"  viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <path fill="#3d1999" d="M45.6,-46.4C61.8,-40.8,79.3,-29,83.5,-13.5C87.7,2,78.5,21,66.6,35.3C54.6,49.6,39.8,59.3,24.1,64.1C8.3,69,-8.5,69.2,-22.3,63.3C-36.1,57.4,-47,45.4,-56.3,31.4C-65.7,17.5,-73.5,1.6,-70.6,-12C-67.7,-25.6,-54,-36.9,-40.5,-42.9C-26.9,-48.9,-13.5,-49.7,0.6,-50.5C14.7,-51.3,29.5,-52,45.6,-46.4Z" transform="translate(100 100)" />
 </svg>
         </section>
