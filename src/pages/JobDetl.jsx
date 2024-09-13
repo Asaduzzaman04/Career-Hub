@@ -3,7 +3,7 @@
 const JobDetl = () => {
     return (
         <div>
-            
+            job details
         </div>
     );
 };

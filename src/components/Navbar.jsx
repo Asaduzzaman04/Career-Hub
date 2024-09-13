@@ -15,16 +15,17 @@ const Navbar = () => {
     },
     {
       id: 2,
-      path: "/Category",
-      name: "Category",
-      class: "bdr",
-    },
-    {
-      id: 3,
       path: "/AppliedJobs",
       name: "applied jobs",
       class: "bdr",
     },
+    {
+      id: 3,
+      path: "/Blogs",
+      name: "blog",
+      class: "bdr",
+    },
+    
   ];
   return (
     <>
@@ -62,7 +63,7 @@ const Navbar = () => {
             </NavLink>
           ))}
           <div onClick={() => setOpen(!open)}>
-            <Button  />
+            <Button/>
           </div>
         </ul>
       </nav>

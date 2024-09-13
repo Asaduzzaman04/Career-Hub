@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer utilities {
    .bdr{
     @apply relative  py-0.5 z-10 before:transition-all before:duration-300 before:ease-linear before:absolute before:top-0 before:left-0 before:h-full before:w-4  
