@@ -10,7 +10,7 @@ const useJobs = () => {
         try{
             const response = await fetch(jobsUrl)
             if(response.ok === false){
-                throw new Error("opps! page not found")
+                throw new Error("opps! page not responding")
             }
             const data = await response.json();
             setJobs(data)

@@ -26,7 +26,7 @@ const Router = createBrowserRouter([
         path : "/Blogs",
         element : <Blogs/>
       },{
-        path : '/jobs/:company_name',
+        path : '/jobs/:companyName',
         element : <JobDet/>
       }
      

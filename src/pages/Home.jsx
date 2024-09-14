@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Jobs from './Jobs';
-import Category from './../components/Category';
+import Category from './Category';
+
 
 
 const text = {
@@ -19,7 +20,7 @@ const Home = () => {
             <h2 className="text-5xl md:text-6xl lg:text-6xl capitalize ">{text.textOne} <span className="text-secondary drop-shadow-[1px_1px_1px_#dfdfdf] ">{text.spanText}</span></h2>
             <p className="font-semibold lg:pr-[15%] text-xl leading-9">{text.description}</p>
 
-            <button className="capitalize bg-secondary text-accent px-6 py-3 text-xl  rounded-md transition-all duration-300 active:scale-95 hover:shadow-[4px_4px_rgba(88,_14,_246,_0.3),_6px_6px_rgba(88,_14,_246,_0.3)] w-fit">
+            <button className="capitalize bg-accent text-button px-6 py-3 text-xl  rounded-md transition-all duration-300 active:scale-95 hover:shadow-[5px_5px_rgba(247,_247,_247,_0.3),_10px_10px_rgba(247,_247,_247,_0.2)] w-fit">
             <NavLink >get jobs</NavLink>
             </button>
             </section>
@@ -37,13 +38,13 @@ const Home = () => {
      {/* -----main-section----- */}
      <main className="px-[5%] md:px-[3%] lg:px-[2%]">
        {/* -----Category-section----- */}
-       <div>
+       <section>
       <Category/>
-      </div>
+      </section>
       {/* ------featured-jobs----- */}
-      <div>
+      <section >
         <Jobs/>
-      </div>
+      </section>
      </main>
       {/* -----footer-section----- */}
       <footer>

@@ -3,7 +3,7 @@
 const Applied = () => {
     return (
         <>
-            cdfdsfadsf
+            applied jobs
         </>
     );
 };
