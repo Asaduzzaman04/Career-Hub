@@ -26,7 +26,7 @@ const viewIngCard = view ? job : job.slice(0,4)
                     </div>
                     <div className="px-[2%]">
                         {
-                            view ? <button onClick={() => setView(!view)} className="capitalize bg-accent text-button px-5 py-2 font-bold rounded-md transition-all duration-300 active:scale-95 hover:shadow-[5px_5px_rgba(247,_247,_247,_0.3),_10px_10px_rgba(247,_247,_247,_0.2)] w-fit">see less</button> : <button onClick={() => setView(!view)} className="capitalize bg-accent text-button px-5 py-2  font-bold  rounded-md transition-all duration-300 active:scale-95 hover:shadow-[5px_5px_rgba(247,_247,_247,_0.3),_10px_10px_rgba(247,_247,_247,_0.2)] w-fit"> see all jobs</button>
+                            view ? <button onClick={() => setView(!view)} className="capitalize bg-accent text-button px-5 py-2 font-bold rounded-md transition-all duration-300 active:scale-95 hover:shadow-[3px_3px_rgba(247,_247,_247,_0.3)] w-fit">see less</button> : <button onClick={() => setView(!view)} className="capitalize bg-accent text-button px-5 py-2  font-bold  rounded-md transition-all duration-300 active:scale-95 hover:shadow-[3px_3px_rgba(247,_247,_247,_0.3)] w-fit"> see all jobs</button>
                         }
                     </div>
                 </section>

@@ -1,19 +1,27 @@
 import { useParams } from "react-router-dom";
 import useJobs from "../hooks/useJobs";
+import Footer from './../components/Footer';
 
 const JobDet = () => {
-  const { companyName } = useParams();
+  const  {companyName}  = useParams();
   const [job,error] = useJobs();
   if(error) {
-    return <p> {error}</p>
+    return <p> loading....</p>
   }
   
   let filterData = job.filter((jobs) => jobs.company_name === companyName);
-  const [data] = filterData;
+console.log(filterData);
 
-  console.log(data);
-
-  return <></>;
+  return <>
+    <main>
+      <section className="text-5xl text-center">
+        job details page
+      </section>
+      <section>
+        <Footer/>
+      </section>
+    </main>
+  </>;
 };
 
 export default JobDet;
