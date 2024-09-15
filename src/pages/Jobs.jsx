@@ -3,18 +3,21 @@ import useJobs from "../hooks/useJobs";
 import JobsCard from "../components/JobsCard";
 
 const Jobs = () => {
-const [jobs] = useJobs()
 const [view ,setView] = useState(false)
+const [job,error] = useJobs()
+if(error){
+    return <p>loading...</p>
+}
 
 
-const viewIngCard = view ? jobs : jobs.slice(0,4)
 
+const viewIngCard = view ? job : job.slice(0,4)
 
     return (
         <>
             <main className="overflow-hidden  items-center mt-5 px-[2%] md:py-[3%] py-6 ">
                 <section className="flex flex-col my-5 justify-center items-center gap-10">
-                    <h2 className=" capitalize  font-semibold text-4xl ">featured jobs</h2>
+                    <h2 className=" capitalize  font-semibold text-4xl lg:7xl">featured jobs</h2>
                     <p className=" font-semibold text-lg text-center">explore thousands of job opportunities with all the information you need. Its your future</p>
                 </section>
                 <section>

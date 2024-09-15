@@ -3,17 +3,21 @@ import useJobs from "../hooks/useJobs";
 
 const JobDet = () => {
   const { companyName } = useParams();
-  const [Jobs] = useJobs();
+  const [job,error] = useJobs();
+  if(error) {
+    return <p> {error}</p>
+  }
+  
+  let filterData = job.filter((jobs) => jobs.company_name === companyName);
+  const [data] = filterData;
 
-  const jobsFilter = Jobs.filter((el) => el.company_name === companyName);
+  console.log(data);
 
-const [obj] = jobsFilter
-console.log(obj);
-  return (
-    <>
-
-    </>
-  );
+  return <></>;
 };
 
 export default JobDet;
+
+//company_name
+//educational_requirement
+//experiences

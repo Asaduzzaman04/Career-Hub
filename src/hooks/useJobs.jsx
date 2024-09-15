@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 
 const useJobs = () => {
     const jobsUrl = 'http://localhost:5173/public/jobs.json'
-    const [Jobs, setJobs] = useState([])
-    const [error, setError] = useState([])
+    const [job, setJobs] = useState([])
+    const [error, setError] = useState('')
     useEffect(()=> {
         const jobData = async () => {
         try{
@@ -20,7 +20,8 @@ const useJobs = () => {
         }
         jobData()
     },[])
-    return [Jobs, error];
+    return [job, error];
 };
 
 export default useJobs;
+
