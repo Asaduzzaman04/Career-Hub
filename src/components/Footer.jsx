@@ -174,13 +174,13 @@ const Footer = () => {
 
               <form className="mt-6">
                 <div>
-                  <label className="sr-only">Email</label>
+                  
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="Enter your email"
-                    className="block w-full p-4 text-accent placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
+                    className="block w-full p-4 bg-accent placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-md focus:outline-none text-primary focus:border-blue-600 caret-blue-600"
                   />
                 </div>
 
