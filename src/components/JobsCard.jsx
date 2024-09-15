@@ -9,8 +9,7 @@ const JobsCard = ({ value }) => {
     job_address,
     job_title,
     job_type,
-    salary_range,
-    id,
+    salary_range, 
   } = value;
   
 

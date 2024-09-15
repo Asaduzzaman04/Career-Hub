@@ -17,8 +17,7 @@ const Category = () => {
       trigger: "category-anime",
       scroller: "body",
       scrub: 3,
-      markers :true,
-      start: "top 10%",
+      start: "top 5%",
       end: "top -100%",
     },
 
@@ -27,7 +26,7 @@ const Category = () => {
 
   return (
     <>
-      <main className=" parent-category flex flex-col justify-center items-center  overflow-hidden gap-10 px-[2%] md:py-[5%] py-6">
+      <main className=" flex flex-col justify-center items-center  overflow-hidden gap-10 px-[2%] md:py-[5%] py-6">
         <section className="flex flex-col gap-6 justify-center items-center flex-wrap">
           <h2 className="text-4xl capitalize font-semibold">
             Job Category List

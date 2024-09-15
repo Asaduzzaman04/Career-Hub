@@ -30,9 +30,9 @@ const Home = () => {
   return (
     <>
       {/* -----hero-section----- */}
-      <header className="flex  flex-col-reverse  md:flex-row  justify-end items-center md:justify-center px-[5%] md:px-[3%] lg:px-[2%]  gap-10 py-10 md:py-0">
+      <header className="overflow-hidden flex  flex-col-reverse  md:flex-row  justify-end items-center md:justify-center px-[5%] md:px-[3%] lg:px-[2%]  gap-10 py-10 md:py-0">
 
-        <section className="hero-anime font-bold py-10 flex flex-col  justify-center items-start  gap-10 md:basis-[90%]  lg:basis-[60%] xl:basis-[50%] pl-3 " >
+        <section className=" hero-anime font-bold py-10 flex flex-col  justify-center items-start  gap-10 md:basis-[90%]  lg:basis-[60%] xl:basis-[50%] pl-3 " >
             <h2 className="text-5xl md:text-6xl lg:text-6xl capitalize hero-anime">{text.textOne} <span className="text-secondary drop-shadow-[1px_1px_1px_#dfdfdf] ">{text.spanText}</span></h2>
             <p className="font-semibold lg:pr-[15%] text-xl leading-9 hero-anime">{text.description}</p>
 

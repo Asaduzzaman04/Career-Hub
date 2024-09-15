@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 
 const useCategory = () => {
-    const url = 'http://localhost:5173/public/category.json'
+    const url = '../../public/Category.json'
     const [category, setCategory] = useState([])
     const [error, setError] = useState('')
 

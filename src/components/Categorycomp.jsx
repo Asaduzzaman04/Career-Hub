@@ -1,7 +1,6 @@
 
 const Categorycomp = ({value}) => {
 
-
     return (
         <>
              <>
@@ -9,7 +8,6 @@ const Categorycomp = ({value}) => {
                     <img src={value.icon} alt={value.alt} />
                     <h2 className="capitalize text-2xl font-bold">{value.title}</h2>
                     <p className="font-semibold">{value.jobs}</p>
-                    
                   </div>
                 </>
         </>

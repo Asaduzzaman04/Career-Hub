@@ -4,10 +4,8 @@ import JobsCard from "../components/JobsCard";
 
 const Jobs = () => {
 const [view ,setView] = useState(false)
-const [job,error] = useJobs()
-if(error){
-    return <p>loading...</p>
-}
+const [job] = useJobs()
+
 
 
 

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 
 const useJobs = () => {
-    const jobsUrl = 'http://localhost:5173/public/jobs.json'
+    const jobsUrl = '../../public/Jobs.json'
     const [job, setJobs] = useState([])
     const [error, setError] = useState('')
     useEffect(()=> {
