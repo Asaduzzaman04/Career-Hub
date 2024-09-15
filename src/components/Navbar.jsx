@@ -3,6 +3,9 @@ import { IoCloseCircle } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Button from "./Button";
 import { useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 
 const Navbar = () => {
   let [open, setOpen] = useState(false)
@@ -27,9 +30,22 @@ const Navbar = () => {
     },
     
   ];
+
+
+useGSAP(()=>{
+  gsap.from(".anime", {
+    y: -300,
+    delay: 0.3,
+    opacity : 0,
+    duration: 0.4,
+    ease:"power1.inOut"
+
+  })
+})
+  
   return (
     <>
-      <nav className=" w-full shadow-2xl shadow-blue-500/20 overflow-hidden bg-[#3d1999] flex justify-between lg:justify-around items-center text-2xl md:text-xl  px-4 py-6 capitalize font-semibold">
+      <nav className=" w-full shadow-2xl shadow-blue-500/20 overflow-hidden bg-[#3d1999] flex justify-between lg:justify-around items-center text-2xl md:text-xl  px-4 py-6 capitalize font-semibold anime">
         {/* -----icon----- */}
         <div className="logo ">
           <span className="text-3xl text-">c</span>areer{" "}
@@ -37,11 +53,11 @@ const Navbar = () => {
         </div>
 
         {/* -----NavLinks----- */}
-        <ul className=" hidden md:flex justify-between items-center gap-16 ">
+        <ul className=" hidden md:flex justify-between items-center gap-16  ">
           {links.map((e) => (
-            <NavLink key={e.id} to={e.path} className={e.class} >
+              <button key={e.id} type="button" className={`${e.class} capitalize `}><NavLink  to={e.path}   >
               {e.name}
-            </NavLink>
+            </NavLink></button>
           ))}
         </ul>
 
@@ -62,8 +78,8 @@ const Navbar = () => {
               {e.name}
             </NavLink>
           ))}
-          <div onClick={() => setOpen(!open)}>
-            <Button/>
+          <div onClick={() => setOpen(!open)}  >
+            <Button  />
           </div>
         </ul>
       </nav>

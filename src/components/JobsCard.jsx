@@ -2,6 +2,7 @@ import { ImLocation2 } from "react-icons/im";
 import { HiCurrencyDollar } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
 const JobsCard = ({ value }) => {
+
   const {
     company_name,
     image_link,
@@ -9,7 +10,9 @@ const JobsCard = ({ value }) => {
     job_title,
     job_type,
     salary_range,
+    id,
   } = value;
+  
 
   return (
     <>

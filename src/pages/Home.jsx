@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import Jobs from './Jobs';
 import Category from './Category';
 import Footer from './../components/Footer';
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 
 
@@ -12,21 +14,34 @@ const text = {
 }
 
 const Home = () => {
+
+  useGSAP(()=>{
+    gsap.from(".hero-anime", {
+
+      y: -600,
+      delay: 0.3,
+      opacity : 0,
+      duration: 0.8,
+      ease:"power1.inOut"
+    
+    })
+  })
+
   return (
     <>
       {/* -----hero-section----- */}
       <header className="flex  flex-col-reverse  md:flex-row  justify-end items-center md:justify-center px-[5%] md:px-[3%] lg:px-[2%]  gap-10 py-10 md:py-0">
 
-        <section className=" font-bold py-10 flex flex-col  justify-center items-start  gap-10 md:basis-[90%]  lg:basis-[60%] xl:basis-[50%] pl-3 " >
-            <h2 className="text-5xl md:text-6xl lg:text-6xl capitalize ">{text.textOne} <span className="text-secondary drop-shadow-[1px_1px_1px_#dfdfdf] ">{text.spanText}</span></h2>
-            <p className="font-semibold lg:pr-[15%] text-xl leading-9">{text.description}</p>
+        <section className="hero-anime font-bold py-10 flex flex-col  justify-center items-start  gap-10 md:basis-[90%]  lg:basis-[60%] xl:basis-[50%] pl-3 " >
+            <h2 className="text-5xl md:text-6xl lg:text-6xl capitalize hero-anime">{text.textOne} <span className="text-secondary drop-shadow-[1px_1px_1px_#dfdfdf] ">{text.spanText}</span></h2>
+            <p className="font-semibold lg:pr-[15%] text-xl leading-9 hero-anime">{text.description}</p>
 
-            <button className="capitalize bg-accent text-button px-6 py-3 text-xl  rounded-md transition-all duration-300 active:scale-95 hover:shadow-[3px_3px_rgba(247,_247,_247,_0.3)] w-fit">
+            <button className="capitalize bg-accent text-button px-6 py-3 text-xl  rounded-md transition-all duration-300 active:scale-95 hover:shadow-[3px_3px_rgba(247,_247,_247,_0.3)] w-fit ">
             <NavLink >get jobs</NavLink>
             </button>
             </section>
 
-        <section className="relative z-20 flex justify-center items-center  w-[80%] md:w-[100%] lg:w-[70%] xl:w-[40%]  ">
+        <section className="relative z-20 flex justify-center items-center  w-[80%] md:w-[100%] lg:w-[70%] xl:w-[40%] hero-anime ">
             <img className=" rounded-b-[40%]  drop-shadow-[5px_-2px_3px_#3d1999] w-full
            " src="https://i.postimg.cc/528XPLwV/hero-Image.png" alt="" />
 
