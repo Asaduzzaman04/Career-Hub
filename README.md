@@ -1,4 +1,9 @@
-
+## 📋Clone
+```
+git clone https://github.com/Asaduzzaman04/Career-Hub.git
+cd Career-Hub
+npm install
+```
 
 ## ⬇️ Installation
 
