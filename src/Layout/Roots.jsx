@@ -6,9 +6,9 @@ const Roots = () => {
 
   return (
     <>
-      <div className="bg-primary text-accent w-full ">
-        <Navbar />
-        <Outlet />
+      <div className="bg-primary text-accent w-full">
+        <Navbar/>
+        <Outlet/>
       </div>
     </>
   );

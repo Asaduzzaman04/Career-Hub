@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 
 
 const useCategory = () => {
-    const url = '../../public/Category.json'
+    const url = './Category.json'
     const [category, setCategory] = useState([])
-    const [error, setError] = useState('')
+    const [error, setError] = useState(null)
 
     useEffect(()=>{
             const categoryData = async () => {

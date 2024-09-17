@@ -5,8 +5,6 @@ import Footer from './../components/Footer';
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-
-
 const text = {
     textOne : 'one step closer to your',
     spanText : 'dream job',
@@ -14,7 +12,6 @@ const text = {
 }
 
 const Home = () => {
-
   useGSAP(()=>{
     gsap.from(".hero-anime", {
 
@@ -26,7 +23,7 @@ const Home = () => {
     
     })
   })
-
+  
   return (
     <>
       {/* -----hero-section----- */}

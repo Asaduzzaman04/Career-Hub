@@ -4,12 +4,15 @@ import JobsCard from "../components/JobsCard";
 
 const Jobs = () => {
 const [view ,setView] = useState(false)
-const [job] = useJobs()
 
+const [job,loading] = useJobs()
 
-
-
+if(loading) {
+    return <p className="text-10xl">loading......</p>
+}
+console.log(loading);
 const viewIngCard = view ? job : job.slice(0,4)
+
 
     return (
         <>
