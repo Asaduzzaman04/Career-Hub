@@ -14,13 +14,11 @@ const text = {
 const Home = () => {
   useGSAP(()=>{
     gsap.from(".hero-anime", {
-
       y: -600,
       delay: 0.3,
       opacity : 0,
       duration: 0.8,
       ease:"power1.inOut"
-    
     })
   })
   

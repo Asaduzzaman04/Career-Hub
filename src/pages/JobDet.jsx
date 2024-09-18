@@ -1,11 +1,17 @@
 import { useParams } from "react-router-dom";
 import Data from "./../hooks/Data";
 import Footer from "./../components/Footer";
+import useApply from "../hooks/useApply";
+
+import { ToastContainer, toast , } from 'react-toastify';
+
 
 const JobDet = () => {
   const { companyName } = useParams();
-
+  const addJobsApply = useApply((state)=> state.addJobsApply)
+  
   const items = Data.filter((e) => e.company_name === companyName);
+
 
   const [data] = items;
   const {
@@ -20,7 +26,10 @@ const JobDet = () => {
     job_type,
     company_name,
   } = data;
-
+  const handleApplied = (data) => {
+    addJobsApply(data)
+    toast("Application submitted")
+  }
   return (
     <>
       <main>
@@ -91,19 +100,15 @@ const JobDet = () => {
             </div>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row lg:col-start-4 lg:gap-4 justify-center">
-            {/* <Link
-            href="#"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-            prefetch={false}
-          >
-            Apply for this job
-          </Link> */}
-            <button
+
+            <button onClick={() => handleApplied(data)}
               className="inline-flex h-10 items-center justify-center rounded-md px-8 text-sm font-bold focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 bg-gray-50 text-gray-900 hover:bg-gray-50/90  active:scale-95 transition-all duration-200 
           hover:shadow-[3px_3px_rgba(247,_247,_247,_0.3)] "
             >
               Apply for this job
             </button>
+            <ToastContainer/>
+       
           </div>
         </div>
         <div className="container grid gap-10 px-4 py-8 text-base md:gap-16 md:px-6 lg:grid-cols-4 lg:gap-12 xl:gap-20">
@@ -120,9 +125,7 @@ const JobDet = () => {
                   alt="Logo"
                   className="aspect-[3/1] overflow-hidden rounded-lg object-contain object-center"
                 />
-                {/* <Link href="#" className="text-gray-500 underline dark:text-gray-400" prefetch={false}>
-                Visit Website
-              </Link> */}
+
 
                 <button className="text-gray-500 underline dark:text-gray-400">
                   {" "}
